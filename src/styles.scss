@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+.p-button.p-button-link {
+    color: black;
+    font-weight: normal;
+}
+
+.p-button-label {
+    font-weight: normal;
+}
+
+.p-button.p-button-link:enabled:focus,
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:focus {
+    box-shadow: none;
+}
+
+.p-button.p-button-link:enabled:active,
+.p-button.p-button-link:enabled:hover {
+    color: black;
+}
+
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:not(.p-disabled):hover {
+    background-color: transparent;
+}
+
+.p-menubar {
+    background-color: lightblue;
+    border: 1px solid lightblue;
+}

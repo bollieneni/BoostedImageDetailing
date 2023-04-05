@@ -33,10 +33,22 @@ body {
 }
 
 .p-menubar {
-    background-color: OLDLACE;
-    border: 1px solid OLDLACE;
+    background-color: cadetblue;
+    border: 1px solid cadetblue;
+    border-radius: 0;
 }
 
-.w-20rem {
-    width: 20rem;
+.p-menuitem-text,
+.p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-text {
+    color: white;
+    font-weight: 600;
+}
+
+.w-10rem {
+    width: 10rem;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: inherit;
 }

@@ -1,7 +1,24 @@
+.contact-us-main-block {
+    color: #1F1749;
+}
+
+label {
+    font-weight: 600;
+}
+
 .free-quote {
     font-size: 2rem;
 }
 
 .tell-us {
-    font-size: 2rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.address-details {
+    border-top: 10px solid #1F1749;
+}
+
+:host ::ng-deep .p-card {
+    color: #1F1749 !important;
 }

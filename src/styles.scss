@@ -1,5 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+    font-family: Helvetica;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .p-button.p-button-link {
     color: black;
     font-weight: normal;
@@ -24,6 +33,10 @@
 }
 
 .p-menubar {
-    background-color: lightblue;
-    border: 1px solid lightblue;
+    background-color: OLDLACE;
+    border: 1px solid OLDLACE;
+}
+
+.w-20rem {
+    width: 20rem;
 }

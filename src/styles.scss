@@ -52,3 +52,9 @@ body {
     text-decoration: none;
     color: inherit;
 }
+
+.p-menubar.p-menubar-mobile-active .p-menubar-root-list {
+    background-color: #5f9ea0;
+    border: 1px solid cadetblue;
+    border-radius: 0;
+}

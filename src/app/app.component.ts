@@ -21,19 +21,31 @@ export class AppComponent implements OnInit {
         command: () => this.router.navigateByUrl('/')
       },
       {
-        label: 'About Us',
+        label: 'About',
         command: () => this.router.navigateByUrl('/aboutus')
       },
       {
-        label: 'Services',
+        label: 'Detailing',
         command: () => this.router.navigateByUrl('/services')
+      },
+      {
+        label: 'Coating',
+        command: () => this.router.navigateByUrl('/coating')
+      },
+      {
+        label: 'Our Work',
+        command: () => this.router.navigateByUrl('/ourwork')
+      },
+      {
+        label: 'Pricing',
+        command: () => this.router.navigateByUrl('/pricing')
       },
       {
         label: 'Schedule Appointment',
         command: () => this.router.navigateByUrl('/bookappointment')
       },
       {
-        label: 'Contact Us',
+        label: 'Contact',
         command: () => this.router.navigateByUrl('/contactus')
       }
     ];

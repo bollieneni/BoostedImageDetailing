@@ -58,3 +58,32 @@
         font-size: 26px
     }
 }
+
+.bottom-block {
+    border-top: 1px solid lightgray;
+    padding-top: 1rem;
+}
+
+.top-block {
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-size: 2rem;
+    }
+}
+
+.bottom-block ul {
+    padding-left: 0px;
+
+    li {
+        color: #717081;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        list-style: none;
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+.bottom-block ul li:last-child {
+    margin-bottom: 0rem;
+}

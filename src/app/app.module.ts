@@ -17,6 +17,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { HomeComponent } from './home/home.component';
+import { CoatingComponent } from './coating/coating.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { OurWorkComponent } from './our-work/our-work.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HomeComponent } from './home/home.component';
     BookAppointmentComponent,
     UserLoginComponent,
     ManageUserProfileComponent,
-    HomeComponent
+    HomeComponent,
+    CoatingComponent,
+    PricingComponent,
+    OurWorkComponent
   ],
   imports: [
     BrowserModule,

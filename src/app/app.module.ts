@@ -16,6 +16,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardModule } from 'primeng/card';
     AboutUsComponent,
     BookAppointmentComponent,
     UserLoginComponent,
-    ManageUserProfileComponent
+    ManageUserProfileComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

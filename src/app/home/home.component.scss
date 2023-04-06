@@ -1,0 +1,41 @@
+.first-block {
+    background-repeat: no-repeat;
+    background-image: url('../../assets/Images/home.jpg');
+}
+
+.main-heading {
+    font-size: 8rem;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+}
+
+.main-head-block {
+    height: 500px;
+    width: 100%;
+}
+
+.logo {
+    img {
+        width: 20%;
+        border-radius: 20%;
+    }
+}
+
+:host ::ng-deep .logo-block {
+    margin-top: 0.5rem;
+
+    .p-card-body {
+        padding: 1rem;
+    }
+
+    .p-card .p-card-content {
+        padding: 0px;
+    }
+}
+
+.appointment-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}

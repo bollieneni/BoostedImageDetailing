@@ -2,11 +2,21 @@
     .contact-us-img {
         height: 10rem;
     }
+
+    .services-section {
+        padding-top: 65px;
+        padding-bottom: 70px;
+    }
 }
 
 @media only screen and (min-width: 576px) {
     .contact-us-img {
         height: 15rem;
+    }
+
+    .services-section {
+        padding-top: 65px;
+        padding-bottom: 70px;
     }
 }
 
@@ -14,12 +24,22 @@
     .contact-us-img {
         height: 25rem;
     }
+
+    .services-section {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
 }
 
 @media only screen and (min-width: 992px) {
 
     .contact-us-img {
         height: 30rem;
+    }
+
+    .services-section {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -33,5 +53,10 @@
 
     .contact-us-img {
         height: 30rem;
+    }
+
+    .services-section {
+        padding-top: 130px;
+        padding-bottom: 120px;
     }
 }

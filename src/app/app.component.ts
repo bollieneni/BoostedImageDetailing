@@ -21,11 +21,15 @@ export class AppComponent implements OnInit {
         command: () => this.router.navigateByUrl('/')
       },
       {
+        label: 'About Us',
+        command: () => this.router.navigateByUrl('/aboutus')
+      },
+      {
         label: 'Services',
         command: () => this.router.navigateByUrl('/services')
       },
       {
-        label: 'Book Appointment',
+        label: 'Schedule Appointment',
         command: () => this.router.navigateByUrl('/bookappointment')
       },
       {

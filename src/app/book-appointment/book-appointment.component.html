@@ -1,8 +1,134 @@
-<div class="row">
+<div class="">
     <div class="col">
-        <div style="top:30%;left:30%;position:absolute">
-            <h1>Website Under Construction</h1>
+        <img class="w-100 contact-us-img" src="assets/Images/contact-us.jpg">
+    </div>
+    <div class="row">
+        <div class="col-12 contact-us-main align-items-center justify-content-center">
+
+            <p-card>
+                <div class="text-center free-quote">
+                    <div class="tell-us pb-4">Schedule Appointment</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 pb-2">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" pInputText
+                                placeholder="Enter First Name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6  pb-2">
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" pInputText id="lastname"
+                                placeholder="Enter Last Name">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6   pb-2">
+                        <div class="form-group">
+                            <label for="phoneNo">Phone Number</label>
+                            <input type="phone" class="form-control" pInputText id="phoneNo"
+                                placeholder="Enter Phone Number">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 pb-2">
+                        <div class="form-group">
+                            <label for="email">Email Id</label>
+                            <input type="email" class="form-control" pInputText id="email" placeholder="Enter Email Id">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 pb-2">
+                        <div class="form-group">
+                            <label for="description">Select Services</label>
+                            <div>
+                                <div *ngFor="let serv of mstServices" class="field-checkbox">
+                                    <p-checkbox name="group" [value]="serv.value" [(ngModel)]="selectedServices"
+                                        [inputId]="serv.value"></p-checkbox>
+                                    <label [for]="serv.value">{{ serv.label }}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 pb-2">
+                        <div class="form-group">
+                            <label id="additionalDesc">Other Services</label>
+                            <textarea id="additionalDesc" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 pb-2">
+                        <div class="form-group">
+                            <label for="address">Your Address</label>
+                            <div>
+                                <input id="address" type="text" class="form-control" pInputText
+                                    placeholder="Enter Address" [(ngModel)]="CustomerAddress" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 pb-2">
+                        <h4>Tell Us about the vehical</h4>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 pb-2">
+                        <div class="form-group">
+                            <label for="vYear">Year</label>
+                            <div>
+                                <input id="vYear" type="text" class="form-control" pInputText
+                                    [(ngModel)]="Vehical.Year" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 pb-2">
+                        <div class="form-group">
+                            <label for="vMake">Make</label>
+                            <div>
+                                <input id="vMake" type="text" class="form-control" pInputText
+                                    [(ngModel)]="Vehical.Make" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 pb-2">
+                        <div class="form-group">
+                            <label for="vModel">Model</label>
+                            <div>
+                                <input id="vModel" type="text" class="form-control" pInputText
+                                    [(ngModel)]="Vehical.Model" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 pb-2">
+                        <div class="form-group">
+                            <label>How do you prefer we contact you?</label>
+
+                            <div class="d-flex flex-wrap gap-3 radio">
+                                <div class="d-flex align-items-center">
+                                    <p-radioButton name="pizza" value="Phone" [(ngModel)]="ContactMethod"
+                                        inputId="Phone"></p-radioButton>
+                                    <label for="Phone" class="ml-2">Phone</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p-radioButton name="pizza" value="Email" [(ngModel)]="ContactMethod"
+                                        inputId="Email"></p-radioButton>
+                                    <label for="Email" class="ml-2">Email</label>
+                                </div>
+
+                                <div class="d-flex align-items-center">
+                                    <p-radioButton name="pizza" value="Text" [(ngModel)]="ContactMethod"
+                                        inputId="Text"></p-radioButton>
+                                    <label for="Text" class="ml-2">Text Message</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p-button label="Schedule" styleClass="p-button-warning w-10rem"></p-button>
+                    </div>
+                </div>
+            </p-card>
+
         </div>
     </div>
-
 </div>

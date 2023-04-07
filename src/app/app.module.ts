@@ -16,10 +16,15 @@ import { MenubarModule } from 'primeng/menubar';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { MultiSelectModule } from 'primeng/multiselect';
+
 import { HomeComponent } from './home/home.component';
 import { CoatingComponent } from './coating/coating.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { OurWorkComponent } from './our-work/our-work.component';
+import { FormsModule } from '@angular/forms';
+import { CheckboxModule } from 'primeng/checkbox';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @NgModule({
   declarations: [
@@ -39,8 +44,10 @@ import { OurWorkComponent } from './our-work/our-work.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MenubarModule, InputTextModule,
-    ButtonModule, CardModule
+    FormsModule,
+    MenubarModule, InputTextModule, CheckboxModule,
+    ButtonModule, CardModule, MultiSelectModule,
+    RadioButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

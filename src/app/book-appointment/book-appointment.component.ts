@@ -15,10 +15,12 @@ export class BookAppointmentComponent {
 
   constructor() {
 
-    this.mstServices = [{ label: 'Detailing Services', value: 'DET' },
+    this.mstServices = [{ label: 'Full Exterior Detail', value: 'FEDET' },
+    { label: 'Full interior Detail', value: 'FIDET' },
     { label: 'Paint Correction', value: 'PNT' },
     { label: 'SB3 - Coating', value: 'SB3' },
-    { label: 'Opt - Coating', value: 'OPT' }]
+    { label: 'Opti - Coating', value: 'OPT' },
+    { label: 'Total Package', value: 'TP' }]
 
   }
 

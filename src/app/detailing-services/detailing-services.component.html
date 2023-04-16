@@ -8,43 +8,230 @@
 <div class="services-section">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-7 col-md-10">
+            <div class="col-xl-6 col-lg-7 col-md-10 d-flex">
                 <div class="section-tittle text-center mb-90">
                     <h2>We offer best services to our customer</h2>
                 </div>
             </div>
+            <div class="col-sm-12 pb-3">
+                <div class="float-end">
+                    <div class="d-flex ">
+                        <div role="button" (click)="showCard=!showCard"><i class="pi pi-list"></i></div>
+                        <div role="button" (click)="showCard=!showCard"><i class="pi pi-table ps-3"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
+        <div class="row" *ngIf="showCard">
+            <div class="col-sm-6 pb-3">
                 <p-card>
-                    <div class="text-center">
-                        <div class="top-block">
-                            <div class="">
-                                <h4>Auto Detailing</h4>
-                                <h6>Our goal of detailing is to bring your vehicle back to its original showroom
-                                    condition, or even better</h6>
-                            </div>
+                    <div class="">
+                        <div class="left-box">
+
                         </div>
-                        <div class="bottom-block">
-                            <ul>
-                                <li>Washing</li>
-                                <li>Claying</li>
-                                <li>Polishing</li>
-                                <li>Waxing</li>
-                                <li>Sealing Exterior</li>
-                                <li>Paint Correction</li>
-                                <li>Scratch Removal</li>
-                            </ul>
+                        <div class="right-box">
+                            <div class="w-100">
+                                <h4>Full Exterior Detail</h4>
+                                <div class="short-text">
+                                    Hand Wash, Foam Cannon Bath| Dried with Compressed Air, Ultra Soft Towels | Wheels
+                                    Deep Cleaned (Faces and Barrels)
+                                    <span *ngIf="!showFED">....</span>
+                                    <span *ngIf="showFED">, Tires Degreased, Wheel Wells Cleaned, Door Jambs,
+                                        Fuel Door Area Degreased and Cleaned, Bug and Light Tar Removal, Grills, Badges,
+                                        Emblems Cleaned, Exhaust Tips Cleaned and Polished | Conditioner(non-Sling) |All
+                                        Windows and Mirrors Cleaned</span>
+                                </div>
+                            </div>
+                            <div class="w-100 text-end">
+                                <span class="btn btn-link" *ngIf="!showFED" (click)="showFED=!showFED">Show More</span>
+                                <span class="btn btn-link" *ngIf="showFED" (click)="showFED=!showFED">Show Less</span>
+                            </div>
                         </div>
                     </div>
                 </p-card>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-sm-6 pb-3">
                 <p-card>
-                    <div class="text-center">
-                        <h4>Coating</h4>
+                    <div class="">
+                        <div class="left-box">
+
+                        </div>
+                        <div class="right-box">
+                            <div class="w-100">
+                                <h4>Full Interior Detail</h4>
+                                <div class="short-text">Trash Removal, Detailed Vacuuming of Carpets & Seat Crevices,
+                                    Dashboard Cleaned and Dressed
+                                    <span *ngIf="!showFID">....</span>
+                                    <span *ngIf="showFID">
+                                        | Matte Finish, Steering Wheel Cleaned & Sanitized, Instrument
+                                        Cluster Cleaned, Navigation Screen Cleaned, Cup Holders Degreased and Cleaned,
+                                        Clean All Door Panels & Vinyl Surfaces, Deep Clean & Condition All Leather
+                                        Surfaces, Rubber Mats Pressure Washed| Clean Trunk + Spare Tire Compartment,
+                                        Interior Protectant Applied (Non-Greasy) | Pet hair removal.</span>
+                                </div>
+                            </div>
+                            <div class="w-100 text-end">
+                                <span class="btn btn-link" *ngIf="!showFID" (click)="showFID=!showFID">Show More</span>
+                                <span class="btn btn-link" *ngIf="showFID" (click)="showFID=!showFID">Show Less</span>
+                            </div>
+                        </div>
                     </div>
                 </p-card>
+            </div>
+            <div class="col-sm-6 pb-3">
+                <p-card>
+                    <div class="">
+                        <div class="left-box">
+
+                        </div>
+                        <div class="right-box">
+                            <div class="w-100">
+                                <h4>Total Package</h4>
+                                <div class="short-text">
+                                    Wheels Deep Cleaned (Faces and Barrels), Tires Degreased, Wheel Wells Cleaned, Door
+                                    Jambs
+                                    <span *ngIf="!showTP">....</span>
+                                    <span *ngIf="showTP">
+                                        , Fuel Door Area Degreased and Cleaned, Bug and Light Tar Removal, Grills,
+                                        Badges, Emblems Cleaned, Exhaust Tips Cleaned and Polished |Hand Wash | Foam
+                                        Cannon Bath, Dried with Compressed Air | Ultra Soft Towels | Tire
+                                        Conditioner(non-Sling) |All Windows and Mirrors Cleaned| Trash Removal, Detailed
+                                        Vacuuming of Carpets & Seat Crevices, Dashboard Cleaned and Dressed | Matte
+                                        Finish, Steering Wheel Cleaned
+                                        & Sanitized, Instrument Cluster Cleaned, Navigation Screen Cleaned, Cup Holders
+                                        Degreased and Cleaned, Clean All Door Panels & Vinyl Surfaces, Deep Clean &
+                                        Condition All Leather Surfaces, Rubber Mats Pressure Washed| Clean Trunk + Spare
+                                        Tire Compartment, Interior Protectant Applied (Non-Greasy)
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-100 text-end">
+                                <span class="btn btn-link" *ngIf="!showTP" (click)="showTP=!showTP">Show More</span>
+                                <span class="btn btn-link" *ngIf="showTP" (click)="showTP=!showTP">Show Less</span>
+                            </div>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+            <div class="col-sm-6 pb-3">
+                <p-card>
+                    <div class="">
+                        <div class="left-box">
+
+                        </div>
+                        <div class="right-box">
+                            <div class="w-100">
+                                <h4>Paint Correction</h4>
+                                <div class="short-text">
+                                    <span *ngIf="!showPC">Remove Scratches and Swirls for a Glass-Like Finish</span>
+                                    <span *ngIf="showPC">
+                                        <p>Remove Scratches and Swirls for a Glass-Like Finish</p>
+                                        <p>
+                                            Paint correction is a labor-intensive process that takes years to master.
+                                            This service is extremely crucial to achieving the highest quality shine out
+                                            of your car's paint by removing paint defects. Paint defects can include
+                                            scratches, swirl marks, haze, oxidation, sanding marks, and polishing trails
+                                            (holograms) left from an operator using polishing tools improperly.
+                                            Paint correction is a process that takes highly trained expertise. We
+                                            thoroughly wash and decontaminate the vehicles finish. Our wash process will
+                                            strip any wax or
+                                            sealant from the paint to show “naked” paint so all defects can be visible.
+                                            Paint
+                                            thickness is measured to help us safely compound and polish paint.
+                                            An experienced vehicle specialist will use a combination of compound and
+                                            polish to
+                                            lightly abrade the paint to remove paint imperfections. This process can
+                                            range from
+                                            1-3 different stages of correction depending on the condition of the paint.
+                                        </p>
+                                        <p>
+                                            The total cost of this process is determined by the condition of the paint
+                                            and the level of refinement desired. The more time spent polishing, the more
+                                            refined and defect-free surface you will have. Following the correction
+                                            process, we strongly recommend our ceramic coatings for years of protection.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-100 text-end">
+                                <span class="btn btn-link" *ngIf="!showPC" (click)="showPC=!showPC">Show More</span>
+                                <span class="btn btn-link" *ngIf="showPC" (click)="showPC=!showPC">Show Less</span>
+                            </div>
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="!showCard">
+
+            <div class="col-sm-12 pb-3">
+                <p-panel header="Full Exterior Detail" [toggleable]="true" [collapsed]="false">
+                    <p>
+                        Hand Wash, Foam Cannon Bath| Dried with Compressed Air, Ultra Soft Towels | Wheels
+                        Deep Cleaned (Faces and Barrels), Tires Degreased, Wheel Wells Cleaned, Door Jambs,
+                        Fuel Door Area Degreased and Cleaned, Bug and Light Tar Removal, Grills, Badges,
+                        Emblems Cleaned, Exhaust Tips Cleaned and Polished | Conditioner(non-Sling) |All
+                        Windows and Mirrors Cleaned
+                    </p>
+                </p-panel>
+            </div>
+
+            <div class="col-sm-12 pb-3">
+                <p-panel header="Full Interior Detail" [toggleable]="true" [collapsed]="true">
+                    <p>
+                        Trash Removal, Detailed Vacuuming of Carpets & Seat Crevices, Dashboard Cleaned and
+                        Dressed | Matte Finish, Steering Wheel Cleaned & Sanitized, Instrument Cluster
+                        Cleaned, Navigation Screen Cleaned, Cup Holders Degreased and Cleaned, Clean All
+                        Door Panels & Vinyl Surfaces, Deep Clean & Condition All Leather Surfaces, Rubber
+                        Mats Pressure Washed| Clean Trunk + Spare Tire Compartment, Interior Protectant
+                        Applied (Non-Greasy) | Pet hair removal.
+                    </p>
+                </p-panel>
+            </div>
+
+            <div class="col-sm-12 pb-3">
+                <p-panel header="Total Package" [toggleable]="true" [collapsed]="true">
+                    <p>
+                        Wheels Deep Cleaned (Faces and Barrels), Tires Degreased, Wheel Wells Cleaned, Door
+                        Jambs, Fuel Door Area Degreased and Cleaned, Bug and Light Tar Removal, Grills,
+                        Badges, Emblems Cleaned, Exhaust Tips Cleaned and Polished |Hand Wash | Foam Cannon
+                        Bath, Dried with Compressed Air | Ultra Soft Towels | Tire Conditioner(non-Sling)
+                        |All Windows and Mirrors Cleaned| Trash Removal, Detailed Vacuuming of Carpets &
+                        Seat Crevices, Dashboard Cleaned and Dressed | Matte Finish, Steering Wheel Cleaned
+                        & Sanitized, Instrument Cluster Cleaned, Navigation Screen Cleaned, Cup Holders
+                        Degreased and Cleaned, Clean All Door Panels & Vinyl Surfaces, Deep Clean &
+                        Condition All Leather Surfaces, Rubber Mats Pressure Washed| Clean Trunk + Spare
+                        Tire Compartment, Interior Protectant Applied (Non-Greasy)
+                    </p>
+                </p-panel>
+            </div>
+
+            <div class="col-sm-12 pb-3">
+                <p-panel header="Paint Correction" [toggleable]="true" [collapsed]="true">
+                    <p>
+                        Remove Scratches and Swirls for a Glass-Like Finish</p>
+                    <p>
+                        Paint correction is a labor-intensive process that takes years to master. This
+                        service is extremely crucial to achieving the highest quality shine out of your
+                        car's paint by removing paint defects. Paint defects can include scratches, swirl
+                        marks, haze, oxidation, sanding marks, and polishing trails (holograms) left from an
+                        operator using polishing tools improperly.
+                        Paint correction is a process that takes highly trained expertise. We thoroughly
+                        wash and decontaminate the vehicles finish. Our wash process will strip any wax or
+                        sealant from the paint to show “naked” paint so all defects can be visible. Paint
+                        thickness is measured to help us safely compound and polish paint.
+                        An experienced vehicle specialist will use a combination of compound and polish to
+                        lightly abrade the paint to remove paint imperfections. This process can range from
+                        1-3 different stages of correction depending on the condition of the paint.
+                    </p>
+                    <p>
+                        The total cost of this process is determined by the condition of the paint and the
+                        level of refinement desired. The more time spent polishing, the more refined and
+                        defect-free surface you will have. Following the correction process, we strongly
+                        recommend our ceramic coatings for years of protection.
+                    </p>
+                </p-panel>
             </div>
         </div>
     </div>

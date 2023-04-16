@@ -17,6 +17,7 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { PanelModule } from 'primeng/panel';
 
 import { HomeComponent } from './home/home.component';
 import { CoatingComponent } from './coating/coating.component';
@@ -47,7 +48,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     FormsModule,
     MenubarModule, InputTextModule, CheckboxModule,
     ButtonModule, CardModule, MultiSelectModule,
-    RadioButtonModule
+    RadioButtonModule, PanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

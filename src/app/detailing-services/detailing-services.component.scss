@@ -10,17 +10,17 @@
         line-height: 1;
         margin-bottom: 0px;
     }
-}
 
-.text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: transparent;
-    padding: 20px;
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: transparent;
+        padding: 20px;
+    }
 }
 
 .text-overlay h2 {
@@ -86,4 +86,23 @@
 
 .bottom-block ul li:last-child {
     margin-bottom: 0rem;
+}
+
+.short-text {
+    color: #6c757d;
+    font-weight: 400;
+    min-height: 70px;
+
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+
+:host ::ng-deep .btn-link {
+    text-decoration: none !important;
+    color: #6c757d !important;
+}
+
+:host ::ng-deep .p-card .p-card-content {
+    padding: 0;
 }

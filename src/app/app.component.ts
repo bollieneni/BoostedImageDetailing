@@ -37,10 +37,6 @@ export class AppComponent implements OnInit {
         command: () => this.router.navigateByUrl('/ourwork')
       },
       {
-        label: 'Pricing',
-        command: () => this.router.navigateByUrl('/pricing')
-      },
-      {
         label: 'Schedule Appointment',
         command: () => this.router.navigateByUrl('/bookappointment')
       },

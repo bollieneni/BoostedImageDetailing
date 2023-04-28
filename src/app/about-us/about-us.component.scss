@@ -1,0 +1,48 @@
+.about-first-div {
+    background: #EEF6FF;
+
+    .inner-div-1 {
+        padding: 65px 46px 24px 50px;
+        background: #fff;
+    }
+
+    .section-bg {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+    }
+}
+
+.aboutus-second-block {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+
+    .section-title h2 {
+        font-size: 48px;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .section-title p {
+        margin-bottom: 25px;
+    }
+}
+
+.right-panel {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+
+    .panel-title h2 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .panel-body p {
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 18px;
+        color: gray;
+    }
+}

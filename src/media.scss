@@ -7,6 +7,11 @@
         padding-top: 65px;
         padding-bottom: 70px;
     }
+
+    .first-div-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 @media only screen and (min-width: 576px) {
@@ -17,6 +22,11 @@
     .services-section {
         padding-top: 65px;
         padding-bottom: 70px;
+    }
+
+    .first-div-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 
@@ -29,9 +39,14 @@
         padding-top: 100px;
         padding-bottom: 70px;
     }
+
+    .first-div-wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width:1200px) {
 
     .contact-us-img {
         height: 30rem;
@@ -40,6 +55,16 @@
     .services-section {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+    .first-div-wrapper {
+        background-image: url('assets/Images/aboutus_1.png');
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .right-panel {
+        padding-top: 0rem !important;
     }
 }
 
@@ -58,5 +83,18 @@
     .services-section {
         padding-top: 130px;
         padding-bottom: 120px;
+    }
+
+    .first-div-wrapper {
+        background-image: url('assets/Images/aboutus_1.png');
+        position: relative;
+        z-index: 1;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .right-panel {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
     }
 }

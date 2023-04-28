@@ -13,7 +13,7 @@ import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'aboutus', component: HomeComponent },
+  { path: 'aboutus', component: AboutUsComponent },
   { path: 'services', component: DetailingServicesComponent },
   { path: 'coating', component: CoatingComponent },
   { path: 'ourwork', component: OurWorkComponent },

@@ -17,10 +17,6 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.items = [
       {
-        label: 'Home',
-        command: () => this.router.navigateByUrl('/')
-      },
-      {
         label: 'About',
         command: () => this.router.navigateByUrl('/aboutus')
       },

@@ -13,14 +13,12 @@ import { PricingComponent } from './pricing/pricing.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'aboutus', component: AboutUsComponent },
   { path: 'services', component: DetailingServicesComponent },
   { path: 'coating', component: CoatingComponent },
   { path: 'ourwork', component: OurWorkComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'bookappointment', component: BookAppointmentComponent },
   { path: 'contactus', component: ContactUsComponent },
-  { path: 'login', component: UserLoginComponent },
   { path: 'manageprofile', component: ManageUserProfileComponent }
 ];
 

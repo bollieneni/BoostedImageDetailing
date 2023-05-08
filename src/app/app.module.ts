@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,7 +49,7 @@ import { RadioButtonModule } from 'primeng/radiobutton';
     FormsModule,
     MenubarModule, InputTextModule, CheckboxModule,
     ButtonModule, CardModule, MultiSelectModule,
-    RadioButtonModule, PanelModule
+    RadioButtonModule, PanelModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

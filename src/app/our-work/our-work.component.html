@@ -1,8 +1,19 @@
-<div class="row">
-    <div class="col">
-        <div style="top:30%;left:30%;position:absolute">
-            <h1>Website Under Construction</h1>
+<div class="container ourwork">
+    <div class="row">
+        <div class="col">
+            <h2>Our Work</h2>
         </div>
     </div>
-
-</div>
+    <div class="row">
+        <div class="col">
+            <div class="image-container col-xs-12 col-sm-4 col-md-3" *ngFor="let img of Images">
+                <img class="image" [src]='img.FileURI' width="375" height="375" />
+                <div class="dummy-overlay">
+                    <div class="dummy-text"></div>
+                    <div class="overlay">
+                        <div class="text">{{img.Description}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
